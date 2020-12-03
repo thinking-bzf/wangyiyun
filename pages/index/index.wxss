@@ -122,3 +122,4 @@
   overfLow: hidden;
   text-overfLow: ellipsis;
 }
+

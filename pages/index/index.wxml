@@ -1,12 +1,13 @@
 <!--pages/index/index.wxml-->
 <view class="indexContainer">
 	<!--  轮播图 -->
-	<swiper class="banners" indicator-dots indicator-active-color="#d43c33" indicator-color="ivory">
+	<swiper class="banners" indicator-dots circular indicator-active-color="#d43c33" indicator-color="ivory">
 		<!-- wx:key="keyname" keyname不用"{{}}"，且只要填写属性名字即可 主要是为了优化添加元素后的下表更新重复计算 -->
 		<swiper-item wx:for="{{bannerList}}" wx:key="bannnerId">
 			<image src="{{item.pic}}"></image>
 		</swiper-item>
 	</swiper>
+	
 
 	<!-- 五个小图标 -->
 	<view class="navContainer">

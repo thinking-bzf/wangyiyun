@@ -1,0 +1,2 @@
+<!-- pages/video/video.wxml -->
+<text class="test" bind>pages/video/video.wxml</text>
