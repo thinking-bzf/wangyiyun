@@ -27,8 +27,9 @@ Page({
         UserInfo: JSON.parse(UserInfo)
       });
       this.getUserRecentPlayList(this.data.UserInfo.userId);
-      console.log(this.data.RecentPlayList);
     }
+    console.log(this.data.RecentPlayList);
+
   },
   // 跳转到登陆界面
   loginPage() {
@@ -40,7 +41,7 @@ Page({
   async getUserRecentPlayList(userId) {
     let RecentPlayData = await request('/user/record', { uid: userId, type: 0 });
     let index = 0;
-    console.log(RecentPlayData);
+    console.log("RecentPlayData" + RecentPlayData);
     let RecentPlayList = RecentPlayData.allData.splice(0, 10).map(item => {
       item.id = index++;
       return item;
@@ -84,14 +85,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**

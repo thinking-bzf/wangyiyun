@@ -1,2 +1,4 @@
 <!-- pages/video/video.wxml -->
-<text class="test" bind>pages/video/video.wxml</text>
+<view class="videoContainer" hover-class="none" hover-stop-propagation="false">
+    
+</view>
